@@ -5,7 +5,9 @@
 		
 //Lilli
 //Enikő
-	
+function IsInt(n){
+	return n % 1 == 0;
+}
 //Enikő
 //Bogi
 		
