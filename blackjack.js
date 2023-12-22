@@ -8,6 +8,13 @@
 function IsInt(n){
 	return n % 1 == 0;
 }
+function Bet(){
+	if(activeBet !=0){
+		return;
+	}
+
+	let bet;
+}
 //Enikő
 //Bogi
 		
