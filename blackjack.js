@@ -14,6 +14,12 @@ function Bet(){
 	}
 
 	let bet;
+	do{
+		bet = prompt("Kérem adja meg a tétet, nem lehet tört! (minimum tét: "+ minimumBet + ")","100");
+	}while(bet == null || bet < minimumBet || isNaN(bet) || IsInt(bet));
+
+	activeBet = parseInt(bet);
+	tempstorage = nyertOsszeg;
 }
 //Enikő
 //Bogi
