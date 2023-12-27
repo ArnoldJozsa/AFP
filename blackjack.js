@@ -20,6 +20,13 @@ function Bet(){
 
 	activeBet = parseInt(bet);
 	tempstorage = nyertOsszeg;
+	if(activeBet > rendOsszeg){
+		activeBet = 0;
+		do{
+			bet = prompt("Kérem adja meg a tétet, nem lehet tört! (minimum tét: " + minimumBet +")");
+		}while(bet == null || bet < minimumBet || isNaN(bet) || !isInt(bet));
+	}
+	rendOsszeg = rendOsszeg - activeBet;
 }
 //Enikő
 //Bogi
