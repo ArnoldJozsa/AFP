@@ -26,6 +26,17 @@ function Bet(){
 		
 //Bogi
 //Zsani
+function RoundWon() {
+			alert("Gratulálunk! Megnyerte a kört és nyert: " + (activeBet * 2) + " zsetont!");
+			rendOsszeg = rendOsszeg + (activeBet * 2);
+			nyertOsszeg = nyertOsszeg + (activeBet * 2)
+			document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+")";
+			StartGame();
+			document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
+			document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
+			activeBet = 0;
+			Doubling = false;
+		}
 
 //Zsani
 //Lilli
