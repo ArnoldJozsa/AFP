@@ -27,6 +27,9 @@ function Bet(){
 		}while(bet == null || bet < minimumBet || isNaN(bet) || !isInt(bet));
 	}
 	rendOsszeg = rendOsszeg - activeBet;
+	rendOsszeg = rendOsszeg - activeBet;
+	document.getElementById("AvailableFunds").innerHTML = rendOsszeg+" (Nyert: "+nyertOsszeg+")";
+	document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";
 }
 //Enikő
 //Bogi
