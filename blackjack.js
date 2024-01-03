@@ -2,7 +2,11 @@
 	
 //Arnold
 //Lilli
-		
+function DrawRandomCard(deck) {
+			
+	var randomindex = Math.floor(deck.length * Math.random())
+	return deck[randomindex];
+}	
 //Lilli
 //Enikő
 function IsInt(n){
