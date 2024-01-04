@@ -19,7 +19,12 @@ function DrawRandomCard(deck) {
 			
 	var randomindex = Math.floor(deck.length * Math.random())
 	return deck[randomindex];
-}	
+}
+
+function StartGame() {
+	jatekosKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
+	VDKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
+}
 //Lilli
 //Enikő
 function IsInt(n){
