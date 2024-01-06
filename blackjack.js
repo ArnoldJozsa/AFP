@@ -25,6 +25,11 @@ function StartGame()
 {
 	jatekosKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
 	VDKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
+	if ((VDKartyai[0] + VDKartyai[1]) == 17) 
+	{
+		VDHuzhat = false;
+	}
+		Doubling = false;
 }
 //Lilli
 //Enikő
