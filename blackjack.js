@@ -80,7 +80,12 @@ function RoundWon() {
 //Lilli
 function StopAndEvaluate() 
 {
-	
+	if (activeBet == 0) 
+	{
+		alert("Először tétet kell raknia!");
+		Bet();
+		return;
+	}
 }
 //Lilli
 //Enikő
