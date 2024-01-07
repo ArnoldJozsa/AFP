@@ -78,7 +78,10 @@ function RoundWon() {
 
 //Zsani
 //Lilli
-
+function StopAndEvaluate() 
+{
+	
+}
 //Lilli
 //Enikő
 function GameLost() {
