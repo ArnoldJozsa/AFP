@@ -67,6 +67,7 @@ function Throw() {
 		alert("Először tétet kell raknia!");
 		return;
 	}
+	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!");
 }
 		
 //Bogi
