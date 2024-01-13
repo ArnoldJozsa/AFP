@@ -67,6 +67,7 @@ function Throw() {
 		alert("Először tétet kell raknia!");
 		return;
 	}
+}
 		
 //Bogi
 //Zsani
