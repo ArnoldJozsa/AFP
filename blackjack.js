@@ -61,7 +61,12 @@ function Bet(){
 }
 //Enikő
 //Bogi
-function Throw() {}
+function Throw() {
+	if (activeBet == 0) 
+	{
+		alert("Először tétet kell raknia!");
+		return;
+	}
 		
 //Bogi
 //Zsani
