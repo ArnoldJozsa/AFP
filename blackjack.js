@@ -61,6 +61,7 @@ function Bet(){
 }
 //Enikő
 //Bogi
+function Throw() {}
 		
 //Bogi
 //Zsani
