@@ -6,4 +6,9 @@ tr.TableMenu1>td, AvailableFunds, Score{
   padding-bottom: 1em;
   padding-right: 5em;
 }
+
+tr.VDTableRow>td {
+	//padding-bottom: 1em;
+	padding-top: 1em;
+}
 /*Enikő*/
