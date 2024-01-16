@@ -72,6 +72,8 @@ function Throw() {
 	StartGame();
 	document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
 	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
+	activeBet = 1;
+	Doubling = false;
 }
 		
 //Bogi
