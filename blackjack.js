@@ -68,6 +68,8 @@ function Throw() {
 		return;
 	}
 	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!");
+	nyertOsszeg = nyertOsszeg - activeBet;
+	StartGame();
 }
 		
 //Bogi
