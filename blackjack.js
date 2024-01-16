@@ -70,6 +70,8 @@ function Throw() {
 	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!");
 	nyertOsszeg = nyertOsszeg - activeBet;
 	StartGame();
+	document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
+	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 }
 		
 //Bogi
