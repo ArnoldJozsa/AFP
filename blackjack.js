@@ -10,7 +10,7 @@
 		var nyertOsszeg = 0;
 		var VDHuzhat = true;
 		var IsThereAnyBet = true;
-		var minimumBet = rendOsszeg * 0.10;
+		var minimumBet = rendOsszeg * 0.05;
 		var activeBet = 0;
 	
 //Arnold
