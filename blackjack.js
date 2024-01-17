@@ -76,7 +76,7 @@ function Throw() {
 	Doubling = false;
 }
 function RoundLost() {
-	alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.");
+	alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.Lapjai: "+ jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")");
 	nyertOsszeg = nyertOsszeg - activeBet;
 	activeBet = 0;
 	if (rendOsszeg == 0 || rendOsszeg < 0) {
