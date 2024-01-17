@@ -76,7 +76,9 @@ function Throw() {
 	Doubling = false;
 }
 function RoundLost() {
-			alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.");
+	alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.");
+	nyertOsszeg = nyertOsszeg - activeBet;
+	activeBet = 0;
 		}
 		
 //Bogi
