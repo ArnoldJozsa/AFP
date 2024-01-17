@@ -82,6 +82,8 @@ function RoundLost() {
 	if (rendOsszeg == 0 || rendOsszeg < 0) {
 		GameLost();
 	StartGame();
+	document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
+	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 		}
 		
 //Bogi
