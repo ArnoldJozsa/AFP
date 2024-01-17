@@ -84,7 +84,8 @@ function RoundLost() {
 	StartGame();
 	document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!)";
 	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
-		}
+	doubling = false;
+}
 		
 //Bogi
 //Zsani
