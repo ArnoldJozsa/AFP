@@ -80,7 +80,8 @@ function RoundLost() {
 	nyertOsszeg = nyertOsszeg - activeBet;
 	activeBet = 0;
 	if (rendOsszeg == 0 || rendOsszeg < 0) {
-				GameLost();
+		GameLost();
+	StartGame();
 		}
 		
 //Bogi
