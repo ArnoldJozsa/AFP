@@ -75,6 +75,9 @@ function Throw() {
 	activeBet = 0;
 	Doubling = false;
 }
+function RoundLost() {
+			alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.");
+		}
 		
 //Bogi
 //Zsani
