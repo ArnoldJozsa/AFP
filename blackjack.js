@@ -15,18 +15,15 @@
 	
 //Arnold
 //Lilli
-function DrawRandomCard(deck) 
-{	
+function DrawRandomCard(deck) {	
 	var randomindex = Math.floor(deck.length * Math.random())
 	return deck[randomindex];
 }
 
-function StartGame() 
-{
+function StartGame() {
 	jatekosKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
 	VDKartyai = [DrawRandomCard(deck), DrawRandomCard(deck)];
-	if ((VDKartyai[0] + VDKartyai[1]) == 17) 
-	{
+	if ((VDKartyai[0] + VDKartyai[1]) == 17) {
 		VDHuzhat = false;
 	}
 		Doubling = false;
@@ -103,10 +100,8 @@ function RoundWon() {
 
 //Zsani
 //Lilli
-function StopAndEvaluate() 
-{
-	if (activeBet == 0) 
-	{
+function StopAndEvaluate() {
+	if (activeBet == 0) {
 		alert("Először tétet kell raknia!");
 		Bet();
 		return;
