@@ -106,6 +106,11 @@ function StopAndEvaluate() {
 		Bet();
 		return;
 	}
+	document.getElementById("ShowVDCards").innerHTML = VDKartyai;
+	if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
+		RoundLost();
+		return;
+	}
 }
 //Lilli
 //Enikő
