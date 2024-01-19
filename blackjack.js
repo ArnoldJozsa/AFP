@@ -111,6 +111,13 @@ function StopAndEvaluate() {
 		RoundLost();
 		return;
 	}
+	while (GetCardValue(VDKartyai) <= 21 || GetCardValue(VDKartyai) < GetCardValue(jatekosKartyai)) {
+		if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai)) {
+			break;
+		}
+		VDKartyai.push(DrawRandomCard(deck));
+		document.getElementById("ShowVDCards").innerHTML = VDKartyai;
+	}
 }
 //Lilli
 //Enikő
