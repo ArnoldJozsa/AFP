@@ -67,7 +67,7 @@ function Throw() {
 	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!😟");
 	nyertOsszeg = nyertOsszeg - activeBet;
 	StartGame();
-	document.getElementById("ShowPlayerCards").innerHTML = "💸Tegyen tétet a kör megkezdéséhez!💸";
+	document.getElementById("ShowPlayerCards").innerHTML = "Tegyen tétet a kör megkezdéséhez!💸";
 	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 	activeBet = 0;
 	Doubling = false;
@@ -79,7 +79,7 @@ function RoundLost() {
 	if (rendOsszeg == 0 || rendOsszeg < 0) {
 		GameLost();
 	StartGame();
-	document.getElementById("ShowPlayerCards").innerHTML = "💸Tegyen tétet a kör megkezdéséhez!💸";
+	document.getElementById("ShowPlayerCards").innerHTML = "Tegyen tétet a kör megkezdéséhez!💸";
 	document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 	doubling = false;
 }
@@ -92,7 +92,7 @@ function RoundWon() {
 			nyertOsszeg = nyertOsszeg + (activeBet * 2)
 			document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+")";
 			StartGame();
-			document.getElementById("ShowPlayerCards").innerHTML = "💸Tegyen tétet a kör megkezdéséhez!💸";
+			document.getElementById("ShowPlayerCards").innerHTML = "Tegyen tétet a kör megkezdéséhez!💸";
 			document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
 			activeBet = 0;
 			Doubling = false;
