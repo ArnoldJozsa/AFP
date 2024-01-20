@@ -64,7 +64,7 @@ function Throw() {
 		alert("Először tétet kell raknia!");
 		return;
 	}
-	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!");
+	alert("Mivel bedobta kártyáit, elvesztette a tétet és kártyáit!😟");
 	nyertOsszeg = nyertOsszeg - activeBet;
 	StartGame();
 	document.getElementById("ShowPlayerCards").innerHTML = "💸Tegyen tétet a kör megkezdéséhez!💸";
@@ -73,7 +73,7 @@ function Throw() {
 	Doubling = false;
 }
 function RoundLost() {
-	alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.Lapjai: "+ jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")");
+	alert("Elvesztette a kört, a tétje elveszett és új kártyákat kap.😟Lapjai: "+ jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")");
 	nyertOsszeg = nyertOsszeg - activeBet;
 	activeBet = 0;
 	if (rendOsszeg == 0 || rendOsszeg < 0) {
@@ -136,7 +136,7 @@ function GameLost() {
 			minimumBet = rendOsszeg * 0.10;
 			activeBet = 0;
 			Doubling = false;
-			alert("Kifogyott a zsetonokból, vége a játéknak! Indítson egy újabb kört az alapértelmezett 1000 zsetonnal való induláshoz!");
+			alert("Kifogyott a zsetonokból, vége a játéknak!💵 Indítson egy újabb kört az alapértelmezett 1000 zsetonnal való induláshoz!");
 			StartGame();
 		}	
 //Enikő
