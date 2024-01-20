@@ -9,7 +9,7 @@
 		var rendOsszeg = 1000;
 		var nyertOsszeg = 0;
 		var VDHuzhat = true;
-		var IsThereAnyBet = true;
+		var IsThereAnyBet = false;
 		var minimumBet = rendOsszeg * 0.05;
 		var activeBet = 0;
 	
