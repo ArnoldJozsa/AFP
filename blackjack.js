@@ -118,6 +118,11 @@ function StopAndEvaluate() {
 		VDKartyai.push(DrawRandomCard(deck));
 		document.getElementById("ShowVDCards").innerHTML = VDKartyai;
 	}
+	alert("Virtuális dealer kártyái: " + VDKartyai+" ("+(GetCardValue(VDKartyai))+")" + "\n" + "A játékos kártyái: " + jatekosKartyai+" ("+GetCardValue(jatekosKartyai)+")");
+	if (GetCardValue(VDKartyai) > GetCardValue(jatekosKartyai) && GetCardValue(VDKartyai) <= 21) {
+		RoundLost();
+		return;
+	}
 }
 //Lilli
 //Enikő
