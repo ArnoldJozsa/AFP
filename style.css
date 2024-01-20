@@ -5,7 +5,7 @@ header {
 
 .red
 {
-	color:red;
+	color: rgba(102,7,30,255);
 }
 .black
 {
@@ -14,7 +14,7 @@ header {
 body
 {
 	/*TODO:Az oldal színet este megbeszéljük discordon ez csak egy demo hogy nagyjaból lássuk mi hogyan latható ezzel a színnel*/
-	background-color: green;
+	background-color: rgb(26,61,45);
 	color:white;
 	font-size: 25px;
 }
