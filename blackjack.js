@@ -87,7 +87,7 @@ function RoundLost() {
 //Bogi
 //Zsani
 function RoundWon() {
-			alert("Gratulálunk! Megnyerte a kört és nyert: " + (activeBet * 2) + " zsetont!");
+			alert("Gratulálunk! Megnyerte a kört és nyert🎉💲: " + (activeBet * 2) + " zsetont!");
 			rendOsszeg = rendOsszeg + (activeBet * 2);
 			nyertOsszeg = nyertOsszeg + (activeBet * 2)
 			document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+")";
