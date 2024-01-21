@@ -150,5 +150,10 @@ function GameLost() {
 //Bogi
 /Meghívom a StartGame függvényt, hogy alaphelyzetbe rakja a játékot./
 StartGame();
+	
+/Felhasználó számára fontos összegek vagy információk vizualizálása./
+document.getElementById("ShowPlayerCards").innerHTML = "?, ? (Tegyen tétet a kör megkezdéséhez!"
+document.getElementById("ShowVDCards").innerHTML = VDKartyai[0] + ", ?";
+document.getElementById("AvailableFunds").innerHTML = rendOsszeg+ " (Nyert: "+nyertOsszeg+");
 		
 //Bogi
