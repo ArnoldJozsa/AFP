@@ -50,6 +50,7 @@ function Bet(){
 		do{
 			bet = prompt("Kérem adja meg a tétet, nem lehet tört! (minimum tét: " + minimumBet +")");
 		}while(bet == null || bet < minimumBet || isNaN(bet) || !isInt(bet));
+		activeBet = parseInt(bet);
 	}
 	rendOsszeg = rendOsszeg - activeBet;
 	rendOsszeg = rendOsszeg - activeBet;
