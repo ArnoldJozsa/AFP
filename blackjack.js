@@ -35,7 +35,7 @@ function IsInt(n){
 	return n % 1 == 0;
 }
 function Bet(){
-	if(activeBet !=0){
+	if(activeBet != 0){
 		return;
 	}
 
@@ -50,10 +50,9 @@ function Bet(){
 		activeBet = 0;
 		do{
 			bet = prompt("Kérem adja meg a tétet, nem lehet tört! (minimum tét: " + minimumBet +")");
-		}while(bet == null || bet < minimumBet || isNaN(bet) || !isInt(bet));
+		}while(bet == null || bet < minimumBet || isNaN(bet) || !IsInt(bet));
 		activeBet = parseInt(bet);
 	}
-	rendOsszeg = rendOsszeg - activeBet;
 	rendOsszeg = rendOsszeg - activeBet;
 	document.getElementById("AvailableFunds").innerHTML = rendOsszeg+" (Nyert: "+nyertOsszeg+")";
 	document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";
