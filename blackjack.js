@@ -97,6 +97,31 @@ function RoundWon() {
 			activeBet = 0;
 			Doubling = false;
 		}
+	function GetCardValue(CardDeck) {
+			sumvalue = 0;
+			for (let i = 0; i < CardDeck.length; i++) {
+				sumvalue = sumvalue + CardDeck[i];
+			}
+			return sumvalue;
+		}
+
+		function Call() {
+			if (activeBet == 0) {
+				alert("Először tétet kell raknia!");
+				Bet();
+				Call();
+				return;
+			}
+			
+			jatekosKartyai.push(DrawRandomCard(deck));
+			document.getElementById("ShowPlayerCards").innerHTML = jatekosKartyai+ " ("+GetCardValue(jatekosKartyai)+")";
+			if (GetCardValue(jatekosKartyai) == 21) {
+				StopAndEvaluate();
+			}
+			if (GetCardValue(jatekosKartyai) > 21) {
+				RoundLost();
+			}
+		}
 
 //Zsani
 //Lilli
@@ -149,7 +174,33 @@ function GameLost() {
 		}	
 //Enikő
 //Zsani
-		
+function DoubleDown() {
+			if (activeBet == 0) {
+				alert("Először tétet kell raknia!");
+				Bet();
+				DoubleDown();
+				return;
+			}
+			if ((rendOsszeg - activeBet) < minimumBet) {
+				alert("Nincs elég zsetonja a duplázáshoz!");
+				return;
+			}
+			if (Doubling) {
+				alert("Már duplázva van a tét!");
+				return;
+			}
+
+			let storedbet = activeBet;
+
+			activeBet = activeBet * 2;
+			rendOsszeg = rendOsszeg - storedbet;
+			Doubling = true;
+
+			Call();
+			if (GetCardValue(jatekosKartyai) > 21) {
+				RoundLost();
+			}
+		}		
 //Zsani
 //Bogi
 /Meghívom a StartGame függvényt, hogy alaphelyzetbe rakja a játékot./
