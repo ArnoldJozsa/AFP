@@ -33,7 +33,7 @@ BetButton {
 	height: 25px;
 	width: 256px;
 	margin: 0;
-	position: 
+	position: relative;
 }
 h3 {
 	text-align: center;
