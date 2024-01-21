@@ -148,5 +148,7 @@ function GameLost() {
 		
 //Zsani
 //Bogi
+/Meghívom a StartGame függvényt, hogy alaphelyzetbe rakja a játékot./
+StartGame();
 		
 //Bogi
