@@ -127,6 +127,10 @@ function StopAndEvaluate() {
 		RoundWon();
 		return;
 	}
+	if (GetCardValue(VDKartyai) > 21) {
+		RoundWon();
+		return;
+	}
 }
 //Lilli
 //Enikő
