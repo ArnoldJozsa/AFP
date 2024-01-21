@@ -15,7 +15,8 @@
 	
 //Arnold
 //Lilli
-function DrawRandomCard(deck) {	
+function DrawRandomCard(deck) {
+	
 	var randomindex = Math.floor(deck.length * Math.random())
 	return deck[randomindex];
 }
@@ -26,7 +27,7 @@ function StartGame() {
 	if ((VDKartyai[0] + VDKartyai[1]) == 17) {
 		VDHuzhat = false;
 	}
-		Doubling = false;
+	Doubling = false;
 }
 //Lilli
 //Enikő
