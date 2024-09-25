@@ -87,7 +87,7 @@ function RoundLost() {
 }
 		
 //Bogi
-//Zsani
+//Arnold
 function RoundWon() {
 			alert("Gratulálunk! Megnyerte a kört és nyert🎉💲: " + (activeBet * 2) + " zsetont!");
 			rendOsszeg = rendOsszeg + (activeBet * 2);
@@ -125,7 +125,7 @@ function RoundWon() {
 			}
 		}
 
-//Zsani
+//Arnold
 //Lilli
 	function StopAndEvaluate() {
 		if (activeBet == 0) {
@@ -175,7 +175,7 @@ function GameLost() {
 			StartGame();
 		}	
 //Enikő
-//Zsani
+//Bogi
 function DoubleDown() {
 			if (activeBet == 0) {
 				alert("Először tétet kell raknia!");
@@ -203,8 +203,7 @@ function DoubleDown() {
 				RoundLost();
 			}
 		}		
-//Zsani
-//Bogi
+
 /Meghívom a StartGame függvényt, hogy alaphelyzetbe rakja a játékot./
 StartGame();
 	
